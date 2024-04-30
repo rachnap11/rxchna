@@ -1,4 +1,3 @@
-/* Rachna Poonit - 8959611 */
 "use strict";
 
 const form = document.querySelector('#contact-us-form'); // get form element using plain jQuery
