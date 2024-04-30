@@ -1,4 +1,3 @@
-/* Rachna Poonit - 8959611 */
 "use strict";
 
 // Global variables
