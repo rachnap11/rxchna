@@ -9,50 +9,52 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Scribble"> <!-- Rubik Scribble font from Google Fonts -->
     </head>
     <body>
-        <nav>
-            <a href="snowman.html" title="Snowman Game" class="active">Snowman Game</a>
-            <a href="about.html" title="About">About</a>
-            <a href="contact.html" title="Contact">Contact</a>
-        </nav>
-        <main>
-            <div>
-                <h1 id="header">Save the Snowman!</h1>
-                <div class="container-center">
-                    <div class="container-div stars">
-                        <img src="./images/stars.png" class="stars" alt="combination of big and small stars">
+        <div class="main-container">
+            <nav>
+                <a href="snowman.html" title="Snowman Game" class="active">Snowman Game</a>
+                <a href="about.html" title="About">About</a>
+                <a href="contact.html" title="Contact">Contact</a>
+            </nav>
+            <main>
+                <div>
+                    <h1 id="header">Save the Snowman!</h1>
+                    <div class="container-center">
+                        <div class="container-div stars">
+                            <img src="./images/stars.png" class="stars" alt="combination of big and small stars">
+                        </div>
+                        <div class="container-div">
+                            <img src="./images/snowman-melt-0.png" id="snowman" alt="Building snowman standing with a background of snow and trees"> <!-- Snowman drawing made using Canva + backgroung image source: https://www.freepik.com/free-vector/realistic-background-winter-season-with-forest-night_78143004.htm#fromView=search&page=1&position=16&uuid=b001dec1-d133-4822-8f3b-4b5781263e1d-->
+                        </div>
+                        <div class="container-div stars">
+                            <img src="./images/stars.png" class="stars" alt="combination of big and small stars">
+                        </div>
                     </div>
-                    <div class="container-div">
-                        <img src="./images/snowman-melt-0.png" id="snowman" alt="Building snowman standing with a background of snow and trees"> <!-- Snowman drawing made using Canva + backgroung image source: https://www.freepik.com/free-vector/realistic-background-winter-season-with-forest-night_78143004.htm#fromView=search&page=1&position=16&uuid=b001dec1-d133-4822-8f3b-4b5781263e1d-->
+                    <div class="container-center" id="word-puzzle"></div> <!-- random word displayed -->
+                    <div class="container-center" id="alphabets-container">
+                        <!-- Alphabets section constructed using constructAlphabetsContainer() -->
                     </div>
-                    <div class="container-div stars">
-                        <img src="./images/stars.png" class="stars" alt="combination of big and small stars">
+                    <div class="container-center" id="new-word-puzzle">
+                        <a href="#" id="new-puzzle-button">
+                            New Puzzle&nbsp
+                            <img src="./images/refresh_icon.png"> <!-- image source: https://www.iconfinder.com/search?q=refresh&price=free -->
+                        </a>
                     </div>
                 </div>
-                <div class="container-center" id="word-puzzle"></div> <!-- random word displayed -->
-                <div class="container-center" id="alphabets-container">
-                    <!-- Alphabets section constructed using constructAlphabetsContainer() -->
+                <div id="side-column">
+                    <!-- Display word hint -->
+                    <fieldset>
+                        <legend id="hint">
+                            <img src="./images/bulb_hint_icon.png" alt="hint icon">
+                            Hint
+                        </legend>
+                        <span id="span-hint"></span> <!-- contains word to be displayed -->
+                    </fieldset>
                 </div>
-                <div class="container-center" id="new-word-puzzle">
-                    <a href="#" id="new-puzzle-button">
-                        New Puzzle&nbsp
-                        <img src="./images/refresh_icon.png"> <!-- image source: https://www.iconfinder.com/search?q=refresh&price=free -->
-                    </a>
-                </div>
-            </div>
-            <div id="side-column">
-                <!-- Display word hint -->
-                <fieldset>
-                    <legend id="hint">
-                        <img src="./images/bulb_hint_icon.png" alt="hint icon">
-                        Hint
-                    </legend>
-                    <span id="span-hint"></span> <!-- contains word to be displayed -->
-                </fieldset>
-            </div>
-        </main>
-        <footer>
-            <small>&copy; Rachna Poonit 2024</small>
-        </footer>
+            </main>
+            <footer>
+                <small>&copy; Rachna Poonit 2024</small>
+            </footer>
+        </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> <!-- Added for jQuery animation -->
         <script src="./js/snowman.js"></script>
