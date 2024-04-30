@@ -140,7 +140,10 @@ footer {
     color: white;
     height: 40px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 20px;   
+}
+
+.footer-position-fixed {
     /* Place footer at the bottom of the page */
     position: fixed;
     bottom: 0;
