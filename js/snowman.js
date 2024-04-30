@@ -2,7 +2,7 @@
 "use strict";
 
 // Global variables
-const arrSnowmanImgSrc = ['images/snowman-melt-0.png', 'images/snowman-melt-1.png', 'images/snowman-melt-2.png', 'images/snowman-melt-3.png', 'images/snowman-melt-4.png', 'images/snowman-melt-5.png', 'images/snowman-melt-6.png', 'images/snowman-melt-7-lose.png', 'images/snowman-win.png'];
+const arrSnowmanImgSrc = ['./images/snowman-melt-0.png', './images/snowman-melt-1.png', './images/snowman-melt-2.png', './images/snowman-melt-3.png', './images/snowman-melt-4.png', './images/snowman-melt-5.png', './images/snowman-melt-6.png', './images/snowman-melt-7-lose.png', './images/snowman-win.png'];
 const arrAlphabets = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 // Array containing 28 word puzzles
