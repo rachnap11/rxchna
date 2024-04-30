@@ -1,0 +1,97 @@
+/* Rachna Poonit - 8959611 */
+#contact-form-container {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 1em;
+    margin-top: 0.5em;
+    box-shadow: 4px 8px 16px rgb(32, 32, 32);
+    border: solid 4px goldenrod;
+}
+
+#contact-form-container h2 {
+    text-transform: uppercase;
+}
+
+#contact-us-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Css for labels in form */
+#contact-us-form label {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+/* Css for input and textarea in form */
+#contact-us-form input, #contact-us-form textarea {
+    border-radius: 10px;
+    border: solid 1px gold;
+    margin-right: 10px;
+    margin-bottom: 1.3em;
+    padding: 0.8em;
+}
+
+#contact-us-form input {
+    font-size: medium;
+}
+
+#contact-us-form textarea {
+    height: 100px;
+    max-height: 100px;
+    max-width: 560px;
+}
+
+#contact-buttons button {
+    margin: 1em 1.2em;
+    width: 40%;
+    height: 40px;
+    background-color: goldenrod;
+    border-radius: 20px;
+    border-color: gold;
+    font-size: medium;
+}
+
+#contact-buttons button:hover {
+    background-color: gold;
+    cursor: pointer; /* change cursor pointer to "hand" when hovering over button */
+}
+
+#contact-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.mandatory {
+    color: red;
+}
+
+#msgContainer {
+    padding-bottom: 1em;
+    padding-left: 3px;
+    height: 1em;
+}
+
+#errMsg {
+    font-size: small;
+    color: red;    
+}
+
+#contactResult {
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+#contact-us-form img {
+    width: 20px;
+}

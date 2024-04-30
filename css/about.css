@@ -1,0 +1,59 @@
+/* Rachna Poonit - 8959611 */
+#about-container-mission {
+    width: 1500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 1em;
+    margin-top: 0.5em;
+    box-shadow: 4px 8px 16px rgb(32, 32, 32);
+    border: solid 4px goldenrod;
+}
+
+/* h3 text in accordion set to bold */
+#about-accordion h3 {
+    font-weight: bold;
+}
+
+
+/* center alight text in p element */
+#about-container p {
+    text-align: justify;
+}
+
+.about-steps {
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+#about-mission-main-desc {
+    line-height: 150%;
+    margin-bottom: 1.5em;
+}
+
+li {
+    margin: 5px;
+}
+
+#about-happy-players {
+    width: 540px;
+    margin: 0 auto;
+}
+
+#about-happy-players h3 {
+    text-transform: uppercase;
+    background: #047FFD url('../bxSlider/images/bullet.gif') no-repeat 7px center; /* CSS for bxSlider plugin */
+	margin: 0;
+	padding: 3px 0 5px 25px;
+    margin-left: 10px;;
+	border: solid #2B65FD 1px;
+	color: white;
+    width: 492px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#about-container-mission h2 {
+    margin-bottom: 0;
+}

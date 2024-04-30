@@ -1,0 +1,226 @@
+/* Rachna Poonit - 8959611 */
+body {
+    font-family: 'Ubuntu', Arial, sans-serif; /* used 'Ubuntu' font from Google Fonts */
+    letter-spacing: 2px; /* Spacing between letters */
+    min-width: 1150; /* Added minimum size if minimising screen */
+    background-image: url(../images/winter-season-background-with-forest-night.jpg); /* image source: https://www.freepik.com/free-vector/vector-seamless-night-forest-background-illustration-with-starry-sky-horizontally-repeatable_132099795.htm#fromView=search&page=1&position=46&uuid=10b16b72-e379-4833-9c08-6dddc9dc83ab */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* do not resize background image when changing size of page */
+}
+
+/* CSS for navbar */
+nav {
+    height: 3em;
+    background-color: #001846; /* set background color of navbar to darkslateblue*/
+    opacity: 0.7;
+    text-transform: uppercase; /* All navbar elements to uppercase */
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+/* CSS for a links in navbar */
+nav a {
+    text-decoration: none;  /* removed text decoration such as underline */
+    margin-right: 2em; /* space before each a link */
+    font-size: larger; /* increase font size */
+    color: white; /* font color white */
+    text-shadow: 3px 3px 10px lightcyan; /* lightcyan text shadow */
+    padding: 15px;
+}
+
+/* Added: effects when hovering over each navbar link */
+nav a:hover {
+    background-color: rgba(255, 253, 253, 0.2);
+    border-radius: 15px;
+}
+
+.active {
+    border-radius: 15px;
+    background-color: rgba(255, 253, 253, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0.8em;
+    text-transform: capitalize;
+    color: white;
+    /*text-shadow: 3px 3px 10px lightcyan;*/
+    font-family: 'Rubik Scribble', Arial, sans-serif; /* used 'Rubik Scribble' font from Google Fonts */
+    font-size: 250%;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center; /* place elements at the center */
+    align-items: center;
+}
+
+.container-div {
+    display: flex;
+    width: 33%;
+    justify-content: center;
+}
+
+.container-center #snowman {
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 4px 8px 16px rgba(32, 32, 32, 0.2); /* Shadow to snowman image */
+}
+
+#alphabets-container {
+    margin-top: 1.5em; /* space between snowman image and alphabets containter */
+    flex-direction: column;
+    align-items: center; /* align alphabets at the center */
+    flex: 1;
+}
+
+.alphabets {
+    /* make a-links appear as buttons */
+    text-decoration: none; /* remove underline style from links */
+    background-color: goldenrod;
+    color: white;
+    font-weight: 600;
+    padding: 10px 30px;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.264);
+    border-radius: 2em;
+    margin: 15px;
+    font-size: larger;
+}
+
+#first-row, #second-row, #third-row {
+    margin: 1.5em; /* space between alphabet rows */
+}
+
+.alphabets:hover {
+    background-color: rgb(147, 111, 22);
+}
+
+.alphabet-disabled { /* Added this class to make alphabet "button" appear disabled */
+    background-color: grey;
+    opacity: 0.7;
+    color: rgb(55, 55, 55);
+    pointer-events: none; /* Disable hover effect */
+}
+
+#word-puzzle {
+    font-size: xx-large;
+    margin: 1em;
+    color: white;
+}
+
+#word-puzzle span {
+    width: 50px;
+    height: 50px;
+    background-color: honeydew;
+    box-shadow: 4px 8px 16px rgba(32, 32, 32, 0.863);
+    text-align: center;
+    line-height: 50px; /* center vertically */
+    color: black;
+    font-weight: 900;
+}
+
+#word-puzzle .letter-invisible {
+    color: transparent;
+}
+
+/* border radium to first and last span elements */
+#word-puzzle span:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#word-puzzle span:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Added: decoration & place footer at the bottom */
+footer {
+    background-color: #001846;
+    opacity: 0.7;
+    color: white;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    /* Place footer at the bottom of the page */
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+}
+
+.stars img {
+    width: 250px;
+    opacity: 0.8;
+    justify-content: center;
+}
+.stars-big {
+    font-size: 500%;
+    padding-top: 0.2em;
+}
+
+.stars-medium {
+    font-size: 300%;
+}
+.stars-small {
+    font-size: 200%;
+    padding-top: 4em;
+}
+.stars-tiny {
+    font-size: 100%;
+    padding-top: 5em;
+}
+.stars-tiny-middle {
+    font-size: 90%;
+    padding-top: 7em;
+}
+
+#new-puzzle-button {
+    /* make Play Again link appear as button */
+    text-decoration: none; /* remove underline style from links */
+    background-color: rgb(0, 157, 0);
+    color: white;
+    font-weight: 600;
+    padding: 10px 25px;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+    margin: 15px;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+#new-puzzle-button img {
+    vertical-align: middle; /* align image in the center vertically */
+    padding-bottom: 3px;
+}
+
+#new-puzzle-button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+#new-word-puzzle {
+    padding-top: 1em;
+}
+
+#side-column {
+    position: absolute; /* placing this column to the utmost right of the screen */
+    top: 0;
+    right: 0;
+    width: 250px;
+    padding-top: 10em;
+    margin-right: 2em;
+}
+
+#side-column fieldset {
+    border-radius: 10px;
+    border: solid 3px goldenrod;
+    color: goldenrod;
+    background-color: #0019469a;
+}
+
+#hint {
+    display: flex;
+    align-items: center;
+    color: goldenrod;
+    font-weight: bolder;
+}
